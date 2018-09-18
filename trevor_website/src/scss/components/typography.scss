@@ -1,0 +1,42 @@
+body {
+    font-family: Sans-serif; 
+}
+
+h1 {
+    font-family: $decorative-lg;
+    color: $primary;
+    font-size: 4vmax;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: $decorative-md;
+    color: $primary;
+    font-size: 2.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top: 4vh;
+    padding-bottom: 3vh;
+    padding-left: 11vh;
+    white-space: nowrap;
+}
+
+h3 {
+    font-family: $decorative-default;
+    color: $primary;
+    font-size: 1.7em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    white-space: nowrap;
+}
+
+h4 {
+    font-family: $decorative-sm;
+    color: $primary;
+    font-size: 1.6vmax;
+    margin-top: 1.4rem;
+    white-space: nowrap;
+}
+

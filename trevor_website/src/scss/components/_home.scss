@@ -1,0 +1,11 @@
+.hero {
+    background-image: url(../images/hero_img.png);
+    background-size: cover;
+    height: 90vh;
+    padding-top: 50vh;
+    h4 {
+        color: $gray-100;
+        padding-left: 10%;
+
+    }
+}

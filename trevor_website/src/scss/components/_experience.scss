@@ -1,0 +1,10 @@
+.experience{
+    background-image: url(../images/mountain_background.png);
+    background-size: cover;
+    height: 120vh;
+
+    .vl {
+        border-left: 3px solid $blue-electric;
+        height: 500px;
+    }
+}

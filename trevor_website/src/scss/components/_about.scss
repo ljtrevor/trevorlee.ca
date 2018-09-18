@@ -1,0 +1,32 @@
+.about {
+    background-color: $blue-light; 
+    background-size: cover;
+    height: 65vh;
+    h3 {
+        padding-top: 0.4em;
+        padding-bottom: 0.2em;
+    }
+    p {
+        font-family: $decorative-paragraph;
+        color: $primary;
+        font-size: 1.21em;
+    }
+    img {
+        padding-right: 0.6em;
+        
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+}
+
+.align-bottom { 
+    margin-bottom:10px;
+    padding-left: 25px; 
+}
+
+.padding-0{
+    padding-right:0;
+    padding-left:0;
+}

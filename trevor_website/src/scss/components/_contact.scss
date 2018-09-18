@@ -1,0 +1,52 @@
+.contact{
+    background-color: $blue-dark; 
+    background-size: cover;
+    height: 30vh;
+    text-align: center;
+
+    h2 {
+        font-size: 2em;
+    }
+
+    ul.list-social {
+        li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+            a {
+                display: block;
+                height: 80px;
+                width: 80px;
+                line-height: 80px;
+                font-size: 40px;
+                border-radius: 100%;
+                color: $primary;
+            }
+            &.social-twitter {
+                a {
+                    background-color: $brand-linkedin;
+                    &:hover {
+                        background-color: darken($brand-linkedin, 5%);
+                    }
+                }
+            }
+            &.social-facebook {
+                a {
+                    background-color: $brand-github;
+                    &:hover {
+                        background-color: darken($brand-github, 5%);
+                    }
+                }
+            }
+            &.social-google-plus {
+                a {
+                    background-color: $brand-email;
+                    &:hover {
+                        background-color: darken($brand-email, 5%);
+                    }
+                }
+            }
+        }
+    }
+}
+
