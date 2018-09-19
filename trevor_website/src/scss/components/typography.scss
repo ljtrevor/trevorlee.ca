@@ -1,5 +1,5 @@
 body {
-    font-family: Sans-serif; 
+    font-family: $decorative-default; 
 }
 
 h1 {
@@ -40,3 +40,40 @@ h4 {
     white-space: nowrap;
 }
 
+
+h5 {
+    font-family: $decorative-dates;
+    color: $blue-electric;
+    font-size: 1.125em;
+    margin-top: 0rem;
+    white-space: nowrap;
+}
+
+h6 {
+    font-family: $decorative-default;
+    color: $primary;
+    font-size: 1em;
+    margin-top: 0rem;
+    white-space: nowrap;
+}
+
+p {
+    font-family: $decorative-paragraph;
+    color: $primary;
+    font-size: 1.21em;
+}
+
+.my-container {
+    border: 3px solid green;
+
+}
+
+.my-row {
+    border: 3px solid red;
+
+}
+
+.my-col {
+    border: 3px solid blue;
+
+}

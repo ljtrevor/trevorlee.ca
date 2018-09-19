@@ -6789,7 +6789,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin-left: 1.7rem; }
 
 body {
-  font-family: Sans-serif; }
+  font-family: sans-serif; }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -6825,6 +6825,34 @@ h4 {
   margin-top: 1.4rem;
   white-space: nowrap; }
 
+h5 {
+  font-family: "Vollkorn", serif;
+  color: #0bb5ff;
+  font-size: 1.125em;
+  margin-top: 0rem;
+  white-space: nowrap; }
+
+h6 {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 1em;
+  margin-top: 0rem;
+  white-space: nowrap; }
+
+p {
+  font-family: "Tinos", serif;
+  color: #fff;
+  font-size: 1.21em; }
+
+.my-container {
+  border: 3px solid green; }
+
+.my-row {
+  border: 3px solid red; }
+
+.my-col {
+  border: 3px solid blue; }
+
 .btn {
   border-radius: 75px; }
 
@@ -6853,10 +6881,6 @@ h4 {
   .about h3 {
     padding-top: 0.4em;
     padding-bottom: 0.2em; }
-  .about p {
-    font-family: "Tinos", serif;
-    color: #fff;
-    font-size: 1.21em; }
   .about img {
     padding-right: 0.6em; }
   .about ul {
@@ -6874,9 +6898,26 @@ h4 {
   background-image: url(../images/mountain_background.png);
   background-size: cover;
   height: 120vh; }
-  .experience .vl {
-    border-left: 3px solid #0bb5ff;
-    height: 500px; }
+  .experience .col-color {
+    border-right: 3px solid #0bb5ff; }
+  .experience h3 {
+    font-size: 1.45em;
+    margin-bottom: 20px; }
+    .experience h3.custom-newline {
+      margin-bottom: 5px; }
+  .experience h5 {
+    font-size: 1.2em;
+    margin-bottom: 10px; }
+  .experience h6 {
+    font-size: 1.15em;
+    margin-bottom: 10px; }
+  .experience p {
+    font-size: 1em;
+    margin-bottom: 20px; }
+  .experience .right-side {
+    margin-left: 20%; }
+  .experience .left-side {
+    margin-right: 20%; }
 
 .contact {
   background-color: #002a4c;

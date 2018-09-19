@@ -3,8 +3,41 @@
     background-size: cover;
     height: 120vh;
 
-    .vl {
-        border-left: 3px solid $blue-electric;
-        height: 500px;
+    .col-color {
+        border-right: 3px solid $blue-electric;
+
+    }
+
+    h3 {
+        font-size: 1.45em;
+        margin-bottom: 20px;
+        
+        &.custom-newline {
+            margin-bottom: 5px;
+        }
+    }
+
+    h5 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        
+    }
+
+    h6 {
+        font-size: 1.15em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        margin-left: 20%;
+    }
+
+    .left-side {
+        margin-right: 20%;
     }
 }
