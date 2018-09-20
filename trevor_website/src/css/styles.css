@@ -6822,7 +6822,7 @@ h4 {
   font-family: "Mukta Malar", sans-serif;
   color: #fff;
   font-size: 1.6vmax;
-  margin-top: 1.4rem;
+  margin-top: 1rem;
   white-space: nowrap; }
 
 h5 {
@@ -6871,33 +6871,32 @@ p {
   height: 90vh;
   padding-top: 50vh; }
   .hero h4 {
-    color: #f8f9fa;
-    padding-left: 10%; }
+    color: #f8f9fa; }
 
 .about {
   background-color: #6a7d84;
   background-size: cover;
-  height: 65vh; }
+  height: 75vh; }
   .about h3 {
     padding-top: 0.4em;
     padding-bottom: 0.2em; }
-  .about img {
+  .about img.profile-pic {
+    border-radius: 50%;
+    width: 100%; }
+  .about img.icon {
     padding-right: 0.6em; }
   .about ul {
-    padding-left: 0px; }
-
-.align-bottom {
-  margin-bottom: 10px;
-  padding-left: 25px; }
-
-.padding-0 {
-  padding-right: 0;
-  padding-left: 0; }
+    list-style: none;
+    padding-left: 0; }
+  .about .align-col {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
 
 .experience {
   background-image: url(../images/mountain_background.png);
   background-size: cover;
-  height: 120vh; }
+  height: 175vh; }
   .experience .col-color {
     border-right: 3px solid #0bb5ff; }
   .experience h3 {
@@ -6922,7 +6921,7 @@ p {
 .contact {
   background-color: #002a4c;
   background-size: cover;
-  height: 30vh;
+  height: 35vh;
   text-align: center; }
   .contact h2 {
     font-size: 2em; }
