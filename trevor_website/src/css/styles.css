@@ -6949,10 +6949,14 @@ p {
     padding-left: 5px; }
   .experience br {
     line-height: 0em; }
-  .experience .right-side {
-    margin-left: 20%; }
-  .experience .left-side {
-    margin-right: 20%; }
+  .experience .fix-margin {
+    margin-right: 10%; }
+  @media (min-width: 768px) {
+    .experience .fix-margin-left {
+      margin-left: 10%;
+      margin-right: 0%; }
+    .experience .text-responsive {
+      text-align: right; } }
 
 .contact {
   background-color: #002a4c;

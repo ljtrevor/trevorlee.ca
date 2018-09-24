@@ -50,11 +50,20 @@
         line-height: 0em;
     }
 
-    .right-side {
-        margin-left: 20%;
+    .fix-margin {
+        margin-right: 10%;
     }
 
-    .left-side {
-        margin-right: 20%;
-    }
+    @include media-breakpoint-up(md) {
+
+        .fix-margin-left {
+            margin-left: 10%;
+            margin-right: 0%;
+        }
+
+        .text-responsive {
+            text-align: right;
+        }
+      }
+
 }
