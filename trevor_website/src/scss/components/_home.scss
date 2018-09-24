@@ -1,9 +1,17 @@
 .hero {
     background-image: url(../images/hero_img.png);
     background-size: cover;
-    height: 90vh;
+    height: auto;
     padding-top: 50vh;
+    text-align: center;
+    
+    
     h4 {
         color: $gray-100;
     }
+
+    @include media-breakpoint-up(md) {
+        text-align: left;
+      }
+
 }

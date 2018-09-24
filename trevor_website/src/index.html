@@ -18,7 +18,7 @@
   <body>
       
     <!-- Nav bar -->
-    <nav class="navbar fixed-top navbar-expand-lg bg-nav navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-md bg-nav navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,12 +43,12 @@
 
     <!-- Section 1: Home -->
     <section class="hero">
-            <div class="container my-container">
+            <div class="container-fluid padding my-container">
                 <div class="row my-row">
-                    <div class="col-md-6 offset-6 align-bottom my-col">
+                    <div class=" col-xs-12 col-sm-12 col-md-6 offset-md-6 col-lg-6 offset-lg-6 col-xl-6 offset-xl-6 align-bottom my-col">
                         <h1>Hi,</h1>
                         <h1>My name is Trevor.</h1>
-                        <h4 class="text-center">Software Engineer | UX/UI Designer</h4>
+                        <h4>Software Engineer | UX/UI Designer</h4>
                     </div> 
             </div>
     </section>
@@ -57,31 +57,31 @@
     <!-- Section 2: About -->
     <section class="about">
         <h2>About Me</h2>
-        <div class="container my-container">
-            <div class="row my-row">
-                <div class="col-4 offset-8 align-bottom">
-                    <h3>Skills</h3>  
-                </div>
-            </div>
-            <div class="row my-row">
-                <div class="col-md-3 my-col">
+        <div class="container-fluid padding my-container">
+            <div class="row my-row justify-content-center">
+                <div class="col-sm-9 col-md-3 my-col">
                     <img class="profile-pic" src="images/profile_pic_crop.jpg"> 
                 </div>
-                <div class="col-md-6 my-col">
+                <div class="col-md-6 my-col text-center">
                     <p>I am a Software Engineer that is passionate about building innovative technology with the latest tools. My goal is to create exceptional solutions through teamwork, perseverance, and intelligence. </p>
-                    <h3>Education</h3>
+                    <h3 class="padding">Education</h3>
                     <p><img class="icon" src="images/education_icon.png">Bachelor of Software Engineering - University of Victoria</p>
                 </div>
-                <div class="col-3 my-col">
+                <div class="col-md-3 my-col">
                     <div class="row my-row justify-content-center text-right">
                         <div class="col-6 my-col align-col">
+                            <h3>Skills</h3>
+                        </div>
+                    </div>
+                    <div class="row my-row justify-content-center text-right">
+                        <div class="col-lg-6 my-col align-col">
                             <ul>
                                 <button type="button" class="btn btn-about">Java</button>
                                 <button type="button" class="btn btn-about">JavaScript</button>
                                 <button type="button" class="btn btn-about">C</button>
                             </ul>
                         </div>
-                        <div class="col-6 my-col align-col">
+                        <div class="col-lg-6 my-col align-col">
                             <ul>
                                 <button type="button" class="btn btn-about">AWS</button>
                                 <button type="button" class="btn btn-about">Bootstrap</button>
@@ -94,10 +94,11 @@
         </div>
     </section>
 
+    
  <!-- Section 3: Experience -->
  <section class="experience">
         <h2>Experience</h2>
-        <div class="container my-container">
+        <div class="container padding my-container">
             <div class="row my-row justify-content-center">
                 <div class="col-6 my-col col-color">
                 </div>
@@ -108,10 +109,10 @@
                         <h6>Software Developer</h6>
                         <p>As a Software Developer, internal and production features were implemented using HTML, CSS, and JavaScript. This role also comprised of interface widget design and the development of iOS and Android SDKs.</p>
                         <ul>
-                                <li><button type="button" class="btn btn-about">AWS</button></li>
-                                <li><button type="button" class="btn btn-about">Bootstrap</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
+                                <li><button type="button" class="btn btn-experience">JavaScript</button></li>
+                                <li><button type="button" class="btn btn-experience">Ember.js</button></li>
+                                <li><button type="button" class="btn btn-experience">AWS</button></li>
+                                <li><button type="button" class="btn btn-experience">iOS/Android</li>
                         </ul>
                     </div>
                 </div>
@@ -125,10 +126,10 @@
                         <h6>Cloud Developer</h6>
                         <p>As a Cloud Developer, a web app to report and visualize the performance and resource usage of thousands of virtual machines was created. </p>
                         <ul>
-                                <li><button type="button" class="btn btn-about">AWS</button></li>
-                                <li><button type="button" class="btn btn-about">Bootstrap</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
+                                <li><button type="button" class="btn btn-experience">Python</button></li>
+                                <li><button type="button" class="btn btn-experience">OpenStack</button></li>
+                                <li><button type="button" class="btn btn-experience">Nagios</button></li>
+                                <li><button type="button" class="btn btn-experience">ELK Stack</button></li>
                         </ul>
                     </div>
                 </div>
@@ -145,10 +146,10 @@
                         <h6>IT Support Analyst</h6>
                         <p>As an IT Support Analyst, day-to-day operations were supported. This included workstation and server maintenance, IT purchasing, and self-directed projects to improve company workflow.   </p>
                         <ul>
-                                <li><button type="button" class="btn btn-about">AWS</button></li>
-                                <li><button type="button" class="btn btn-about">Bootstrap</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
+                                <li><button type="button" class="btn btn-experience">PowerShell</button></li>
+                                <li><button type="button" class="btn btn-experience">Active Directory</button></li>
+                                <li><button type="button" class="btn btn-experience">Windows Servers</button></li>
+                                <li><button type="button" class="btn btn-experience">Jira</button></li>
                         </ul>
                     </div>
                 </div>
@@ -161,10 +162,10 @@
                         <h6>Software Test Specialist</h6>
                         <p>As a Software Test Specialist, unit tests and automated tests were developed. This role also comprised of, manual black-box testing, white-box testing, and test plan creation..</p>
                         <ul>
-                                <li><button type="button" class="btn btn-about">AWS</button></li>
-                                <li><button type="button" class="btn btn-about">Bootstrap</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
-                                <li><button type="button" class="btn btn-about">SQL</button></li>
+                                <li><button type="button" class="btn btn-experience">Java</button></li>
+                                <li><button type="button" class="btn btn-experience">JUnit</button></li>
+                                <li><button type="button" class="btn btn-experience">JavaScript</button></li>
+                                <li><button type="button" class="btn btn-experience">Selenium</button></li>
                         </ul>
                     </div>
                 </div>
@@ -177,9 +178,9 @@
 
  <!-- Section 4: Contact -->
  <section class="contact">
-    <div class="container my-container">
+    <div class="container padding my-container">
         <h2>Let's build something amazing.</h2>
-        <ul class="list-inline list-social">
+        <ul class="list-social">
             <li class="social-google-plus">
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </li>

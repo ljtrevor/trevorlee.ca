@@ -6794,55 +6794,54 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   color: #fff;
-  font-size: 4vmax;
+  font-size: 3.5rem;
   margin-top: 0em;
-  margin-bottom: 0em;
-  white-space: nowrap; }
+  margin-bottom: 0em; }
 
 h2 {
   font-family: "Arimo", sans-serif;
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-top: 0em;
   margin-bottom: 0em;
   padding-top: 4vh;
   padding-bottom: 3vh;
-  padding-left: 11vh;
-  white-space: nowrap; }
+  padding-left: 5vw; }
 
 h3 {
   font-family: sans-serif;
   color: #fff;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   margin-top: 0em;
-  margin-bottom: 0em;
-  white-space: nowrap; }
+  margin-bottom: 0em; }
 
 h4 {
   font-family: "Mukta Malar", sans-serif;
   color: #fff;
-  font-size: 1.6vmax;
-  margin-top: 1rem;
-  white-space: nowrap; }
+  font-size: 1.3rem;
+  margin-top: 1rem; }
 
 h5 {
   font-family: "Vollkorn", serif;
   color: #0bb5ff;
-  font-size: 1.125em;
-  margin-top: 0rem;
+  font-size: 1.125rem;
+  margin-top: 0em;
   white-space: nowrap; }
 
 h6 {
   font-family: sans-serif;
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   margin-top: 0rem;
   white-space: nowrap; }
 
 p {
   font-family: "Tinos", serif;
   color: #fff;
-  font-size: 1.21em; }
+  font-size: 1.21rem; }
+
+.padding {
+  padding-bottom: 3em; }
 
 .my-container {
   border: 3px solid green; }
@@ -6863,23 +6862,44 @@ p {
   font-size: 1em;
   width: 100px;
   height: 40px;
-  margin-bottom: 20px; }
+  margin-bottom: 5px; }
+
+.btn-experience {
+  background-color: #dcdcdc;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 0.75em;
+  width: 90px;
+  height: 45px;
+  font-weight: bold;
+  white-space: normal;
+  margin-bottom: 10px; }
+
+.text-reduced {
+  font-size: 0.7em; }
 
 .hero {
   background-image: url(../images/hero_img.png);
   background-size: cover;
-  height: 90vh;
-  padding-top: 50vh; }
+  height: auto;
+  padding-top: 50vh;
+  text-align: center; }
   .hero h4 {
     color: #f8f9fa; }
+  @media (min-width: 768px) {
+    .hero {
+      text-align: left; } }
 
 .about {
   background-color: #6a7d84;
   background-size: cover;
-  height: 75vh; }
+  height: auto; }
   .about h3 {
-    padding-top: 0.4em;
-    padding-bottom: 0.2em; }
+    padding-top: 0em;
+    padding-bottom: 0em; }
+    .about h3.padding {
+      padding-top: 1rem;
+      padding-bottom: 0.2rem; }
   .about img.profile-pic {
     border-radius: 50%;
     width: 100%; }
@@ -6892,11 +6912,16 @@ p {
     margin: 0;
     padding: 0;
     text-align: center; }
+  @media (min-width: 768px) {
+    .about p {
+      text-align: left; }
+    .about h3.padding {
+      text-align: left; } }
 
 .experience {
   background-image: url(../images/mountain_background.png);
   background-size: cover;
-  height: 175vh; }
+  height: auto; }
   .experience .col-color {
     border-right: 3px solid #0bb5ff; }
   .experience h3 {
@@ -6913,6 +6938,17 @@ p {
   .experience p {
     font-size: 1em;
     margin-bottom: 20px; }
+  .experience ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  .experience li {
+    float: left;
+    padding-right: 5px;
+    padding-left: 5px; }
+  .experience br {
+    line-height: 0em; }
   .experience .right-side {
     margin-left: 20%; }
   .experience .left-side {
@@ -6921,7 +6957,7 @@ p {
 .contact {
   background-color: #002a4c;
   background-size: cover;
-  height: 35vh;
+  height: auto;
   text-align: center; }
   .contact h2 {
     font-size: 2em; }

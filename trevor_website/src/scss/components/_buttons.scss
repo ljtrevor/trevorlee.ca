@@ -9,6 +9,23 @@
     font-size: 1em;
     width: 100px;
     height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 
+}
+
+.btn-experience{
+    background-color: $gray-custom;
+    color: $black;
+    font-family: $decorative-default;
+    font-size: 0.75em;
+    width: 90px;
+    height: 45px;
+    font-weight: bold;
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+
+.text-reduced {
+    font-size: 0.7em;
 }

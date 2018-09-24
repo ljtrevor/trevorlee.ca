@@ -5,54 +5,50 @@ body {
 h1 {
     font-family: $decorative-lg;
     color: $primary;
-    font-size: 4vmax;
+    font-size: 3.5rem;
     margin-top: 0em;
     margin-bottom: 0em;
-    white-space: nowrap;
 }
 
 h2 {
     font-family: $decorative-md;
     color: $primary;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-top: 0em;
     margin-bottom: 0em;
     padding-top: 4vh;
     padding-bottom: 3vh;
-    padding-left: 11vh;
-    white-space: nowrap;
+    padding-left: 5vw;
 }
 
 h3 {
     font-family: $decorative-default;
     color: $primary;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     margin-top: 0em;
     margin-bottom: 0em;
-    white-space: nowrap;
 }
 
 h4 {
     font-family: $decorative-sm;
     color: $primary;
-    font-size: 1.6vmax;
+    font-size: 1.3rem;
     margin-top: 1rem;
-    white-space: nowrap;
 }
 
 
 h5 {
     font-family: $decorative-dates;
     color: $blue-electric;
-    font-size: 1.125em;
-    margin-top: 0rem;
+    font-size: 1.125rem;
+    margin-top: 0em;
     white-space: nowrap;
 }
 
 h6 {
     font-family: $decorative-default;
     color: $primary;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 0rem;
     white-space: nowrap;
 }
@@ -60,7 +56,12 @@ h6 {
 p {
     font-family: $decorative-paragraph;
     color: $primary;
-    font-size: 1.21em;
+    font-size: 1.21rem;
+}
+
+.padding {
+    padding-bottom: 3em;
+
 }
 
 .my-container {
