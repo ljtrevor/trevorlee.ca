@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Arimo|Mukta+Malar:300|Roboto:700|Tinos|Vollkorn:700" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <!--index.js-->
+    <script src="js/index.js"></script>
 
     <title>Trevor's Website</title>
   </head>
@@ -58,7 +60,7 @@
     <section class="about">
         <h2>About Me</h2>
         <div class="container-fluid padding my-container">
-            <div class="row my-row justify-content-center">
+            <div class="row my-row justify-content-center align-items-center">
                 <div class="col-sm-9 col-md-3 my-col">
                     <img class="profile-pic" src="images/profile_pic_crop.jpg"> 
                 </div>
@@ -100,9 +102,12 @@
         <h2>Experience</h2>
         <div class="container padding my-container">
             <div class="row my-row justify-content-center">
-                <div class="col-md-6 my-col col-color">
+                <div class="col-md my-col col-color">
                 </div>
-                <div class="col-md-6 my-col col-color">
+                <div class="col-md-auto my-col col-color">
+                    <img src="images/circle.svg">
+                </div>
+                <div class="col-md my-col col-color">
                     <div class="fix-margin fix-margin-left ">
                         <h5>May - Aug 2017</h5>
                         <h3>Referral SaaSquatch</h3>
@@ -118,7 +123,7 @@
                 </div>
             </div>
             <div class="row my-row justify-content-center">
-                <div class="col-md-6 my-col col-color text-responsive">
+                <div class="col-md my-col col-color text-responsive">
                     <div class="fix-margin">
                         <h5>Sep - Dec 2016</h5>
                         <h3 class="custom-newline">High Energy Physics</h3>
@@ -126,20 +131,26 @@
                         <h6>Cloud Developer</h6>
                         <p>As a Cloud Developer, a web app to report and visualize the performance and resource usage of thousands of virtual machines was created. </p>
                         <ul>
-                                <li><button type="button" class="btn btn-experience">Python</button></li>
-                                <li><button type="button" class="btn btn-experience">OpenStack</button></li>
-                                <li><button type="button" class="btn btn-experience">Nagios</button></li>
-                                <li><button type="button" class="btn btn-experience">ELK Stack</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">Python</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">OpenStack</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">Nagios</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">ELK Stack</button></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 my-col">
+                <div class="col-md-auto my-col col-color">
+                        <img src="images/circle.svg">
+                </div>
+                <div class="col-md my-col">
                 </div>
             </div>
             <div class="row my-row justify-content-center">
-                <div class="col-md-6 my-col col-color">
+                <div class="col-md my-col col-color">
                 </div>
-                <div class="col-md-6 my-col">
+                <div class="col-md-auto my-col col-color">
+                    <img src="images/circle.svg">
+                </div>
+                <div class="col-md my-col">
                     <div class="fix-margin fix-margin-left">
                         <h5>Sep - Dec 2015</h5>
                         <h3>Latitude Geographics</h3>
@@ -155,21 +166,24 @@
                 </div>
             </div>
             <div class="row my-row justify-content-center">
-                <div class="col-md-6 my-col col-color text-responsive">
+                <div class="col-md my-col col-color text-responsive">
                     <div class="fix-margin">
                         <h5>May - Aug 2015</h5>
                         <h3>IBM Canada Ltd.</h3>
                         <h6>Software Test Specialist</h6>
                         <p>As a Software Test Specialist, unit tests and automated tests were developed. This role also comprised of, manual black-box testing, white-box testing, and test plan creation..</p>
                         <ul>
-                                <li><button type="button" class="btn btn-experience">Java</button></li>
-                                <li><button type="button" class="btn btn-experience">JUnit</button></li>
-                                <li><button type="button" class="btn btn-experience">JavaScript</button></li>
-                                <li><button type="button" class="btn btn-experience">Selenium</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">Java</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">JUnit</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">JavaScript</button></li>
+                                <li class="set-right"><button type="button" class="btn btn-experience">Selenium</button></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 my-col">
+                <div class="col-md-auto my-col col-color">
+                    <img src="images/circle.svg">
+                </div>
+                <div class="col-md my-col">
                 </div>
             </div>
         </div>
@@ -181,20 +195,20 @@
     <div class="container padding my-container">
         <h2>Let's build something amazing.</h2>
         <ul class="list-social">
-            <li class="social-google-plus">
+            <li class="social-google-plus hvr-float-shadow">
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </li>
-            <li class="social-facebook">
+            <li class="social-facebook hvr-float-shadow">
                 <a href="#" target="_blank"><i class="fab fa-github"></i></a>
             </li>
-            <li class="social-twitter">
+            <li class="social-twitter hvr-float-shadow">
                 <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </li>
         </ul>
     </div>
 </section> 
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- jQuery, Tether,Bootstrap JS, index JS -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>

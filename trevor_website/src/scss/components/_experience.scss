@@ -54,6 +54,7 @@
         margin-right: 10%;
     }
 
+
     @include media-breakpoint-up(md) {
 
         .fix-margin-left {
@@ -64,6 +65,11 @@
         .text-responsive {
             text-align: right;
         }
-      }
 
+        li {
+            &.set-right {
+                float: right;
+            }
+        }
+    }
 }
