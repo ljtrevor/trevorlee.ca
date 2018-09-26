@@ -12,13 +12,12 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
     <!--index.js-->
-    <script src="js/index.js"></script>
 
     <title>Trevor's Website</title>
   </head>
 
   <body>
-      
+
     <!-- Nav bar -->
     <nav class="navbar fixed-top navbar-expand-md bg-nav navbar-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +64,7 @@
                     <img class="profile-pic" src="images/profile_pic_crop.jpg"> 
                 </div>
                 <div class="col-md-6 my-col text-center">
-                    <p>I am a Software Engineer that is passionate about building innovative technology with the latest tools. My goal is to create exceptional solutions through teamwork, perseverance, and intelligence. </p>
+                    <p>I am a Software Engineer that is passionate about building innovative technology with the latest tools. My goal is to create exceptional solutions through teamwork, perseverance, and continuous improvement. </p>
                     <h3 class="padding">Education</h3>
                     <p><img class="icon" src="images/education_icon.png">Bachelor of Software Engineering - University of Victoria</p>
                 </div>
@@ -100,12 +99,13 @@
  <!-- Section 3: Experience -->
  <section class="experience">
         <h2>Experience</h2>
-        <div class="container padding my-container">
+        <div id="labelDiv" class="container padding my-container">
+            <canvas id="theCanvas"></canvas>
             <div class="row my-row justify-content-center">
                 <div class="col-md my-col col-color">
                 </div>
                 <div class="col-md-auto my-col col-color">
-                    <img src="images/circle.svg">
+                    <img id="point_start" src="images/circle.svg">
                 </div>
                 <div class="col-md my-col col-color">
                     <div class="fix-margin fix-margin-left ">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-md-auto my-col col-color">
-                    <img src="images/circle.svg">
+                    <img id="point_end" src="images/circle.svg">
                 </div>
                 <div class="col-md my-col">
                 </div>
@@ -191,7 +191,7 @@
 
 
  <!-- Section 4: Contact -->
- <section class="contact">
+ <section class="contact">     
     <div class="container padding my-container">
         <h2>Let's build something amazing.</h2>
         <ul class="list-social">
@@ -208,9 +208,12 @@
     </div>
 </section> 
 
+
+
     <!-- jQuery, Tether,Bootstrap JS, index JS -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
