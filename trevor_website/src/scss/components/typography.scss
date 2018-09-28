@@ -1,5 +1,5 @@
 body {
-    font-family: $decorative-default; 
+    font-family: $decorative-default;
 }
 
 h1 {
@@ -79,43 +79,79 @@ p {
 
 }
 
-#svg{
+// #svg {
+//     background: #afa;
+//     position: absolute;
+//     width:100vw*10;
+//     height:100vh *10;
+//   }
+//   #svg line {
+//     stroke:#000;
+//     pointer-events: all;
+//     stroke-width:5px;
+//   }
+//   #svg line:hover {
+//     stroke:#aaa;
+//   }
+
+//   .container2 {
+//     position: relative;
+//   }
+//   .overlay {
+//     position: absolute;
+//     background: rgba(100,100,100,0);
+//     top:0px;
+//     bottom:0px;
+//     left:0px;
+//     right:0px;
+//   }
+  
+
+svg {
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
+    z-index: 3;
     width: 100%;
-    height: 100vh;
-  }
-  
-  #line{
-    stroke-width:2px;
-    stroke:rgb(0,0,0);
-  }
-  
-  .point{
-    width: 10px;
-    height: 10px;
-    background: red;
-    position: absolute;
-  }
-  
-  #one{
-    top: 20px;
-    left: 50px;
-  }
-  
-  #two{
-    top: 200px;
-    right: 50px;
-  }
-
-  canvas{
-    position:absolute;
-    background:rgba(255,0,0,0.3);
-    z-index:3;
-  }
-
-  #labelDiv {
-    z-index: 1;
-    //position:absolute;
 }
+
+// #svg{
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//   }
+  
+//   #line{
+//     stroke-width:2px;
+//     stroke:rgb(0,0,0);
+//   }
+  
+//   .point{
+//     width: 10px;
+//     height: 10px;
+//     background: red;
+//     position: absolute;
+//   }
+  
+//   #one{
+//     top: 20px;
+//     left: 50px;
+//   }
+  
+//   #two{
+//     top: 200px;
+//     right: 50px;
+//   }
+
+//   canvas{
+//     position:absolute;
+//     z-index: 2;
+//     width:  100%;
+//     height: 100%; 
+//   }
+
+//   #labelDiv {
+//       z-index: 1;
+// }
