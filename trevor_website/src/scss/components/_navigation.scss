@@ -4,6 +4,59 @@
 
 .nav-item {
     font-family: $decorative-lg;
-    color: $primary;
-    margin-left: 1.7rem;
+    margin-left: 1.5rem;
 }
+
+// White links against a dark background
+.navbar-dark {
+    .navbar-brand {
+      color: $navbar-dark-active-color;
+  
+      @include hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $navbar-dark-color;
+  
+        @include hover-focus {
+          color: $navbar-dark-hover-color;
+        }
+  
+        &.disabled {
+          color: $navbar-dark-disabled-color;
+        }
+      }
+  
+      .show > .nav-link,
+      .active > .nav-link,
+      .nav-link.show,
+      .nav-link.active {
+        color: $navbar-dark-active-color;
+        text-decoration: underline;
+      }
+    }
+  
+    .navbar-toggler {
+      color: $navbar-dark-color;
+      border-color: $navbar-dark-toggler-border-color;
+    }
+  
+    .navbar-toggler-icon {
+      background-image: $navbar-dark-toggler-icon-bg;
+    }
+  
+    .navbar-text {
+      color: $navbar-dark-color;
+      a {
+        color: $navbar-dark-active-color;
+  
+        @include hover-focus {
+          color: $navbar-dark-active-color;
+        }
+      }
+    }
+  }
+  
