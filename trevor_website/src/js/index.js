@@ -64,7 +64,7 @@ line1
       }, 1000);
   })
 
-  //Active link switching
+
 
   //if on top of the page, home should be selected
   if($(window).scrollTop() === 0) {
@@ -72,6 +72,7 @@ line1
     $('#nav-home').parent().siblings().children().removeClass('active');
 
   }
+    //Active link switching
   $(window).scroll(function() {
       var scrollbarLocation = $(this).scrollTop();
       scrollLink.each(function() {
@@ -88,3 +89,12 @@ line1
         }
       })
   })
+
+
+
+  $( function() {
+    $( "#RS-list,#UV-list,#LG-list,#IBM-list" ).sortable({
+        cancel: false},
+        {containment: 'parent'
+    });
+  } );
