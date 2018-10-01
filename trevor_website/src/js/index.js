@@ -42,12 +42,46 @@ var pos2 = div2.offset();
 var svg = $('#svg1');
 svg.css('height', pos2.top + padding_point);
 
-// Draw the line from the initial start and end points.
-line1
-  .attr('x1', pos1.left + padding_left)
-  .attr('y1', pos1.top + padding_top)
-  .attr('x2', pos2.left + padding_left)
-  .attr('y2', pos2.top + padding_top);
+// Draw the line from the initial start and end points when user is on the experience section.
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+  
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+  
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
+
+  if($('#point_start').isInViewport()) {
+    $('#line1').addClass('draw-line');
+    line1
+        .attr('x1', pos1.left + padding_left)
+        .attr('y1', pos1.top + padding_top)
+        .attr('x2', pos2.left + padding_left)
+        .attr('y2', pos2.top + padding_top);
+}
+$(window).scroll(function() {
+    if($('#point_start').isInViewport()) {
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
+})
+
+var experienceOffset = $('#Experience').offset().top;
+    if($(window).scrollTop() + $(window).height() >= experienceOffset) {
+        console.log('sup');
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
 
 // Event listener to resize the svg canvas and redraw the line when the window is resized.
   window.addEventListener('resize', resizeCanvas, false);
@@ -90,11 +124,14 @@ line1
       })
   })
 
-
-
+  // make experience button list draggable 
   $( function() {
     $( "#RS-list,#UV-list,#LG-list,#IBM-list" ).sortable({
         cancel: false},
-        {containment: 'parent'
+        {containment: 'parent',
+        tolerance:'pointer'
     });
   } );
+
+  //Scroll Reveal
+  ScrollReveal().reveal('.scrollReveal',{delay:400, duration:800, easing:'ease-in', interval: 500});

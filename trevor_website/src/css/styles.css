@@ -6995,13 +6995,15 @@ p {
     line-height: 0em; }
   .experience .fix-margin {
     margin-right: 10%; }
+  .experience ul {
+    list-style: none; }
   @media (min-width: 768px) {
     .experience .fix-margin-left {
       margin-left: 10%;
       margin-right: 0%; }
     .experience .text-responsive {
       text-align: right; }
-    .experience li.set-right {
+    .experience ul li.set-right {
       float: right; }
     .experience .row-padding {
       padding-top: 25px;
@@ -7080,8 +7082,18 @@ svg {
 
 line {
   stroke: #0bb5ff;
-  stroke-width: 3; }
+  stroke-width: 3;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000; }
 
+.draw-line {
+  animation: dash 8s linear forwards; }
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 3000; }
+  to {
+    stroke-dashoffset: 0; } }
 .align-point {
   text-align: right; }
 

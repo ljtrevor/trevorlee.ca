@@ -50,6 +50,9 @@
         margin-right: 10%;
     }
 
+    ul {
+        list-style: none; 
+    }
 
     @include media-breakpoint-up(md) {
 
@@ -60,12 +63,12 @@
 
         .text-responsive {
             text-align: right;
-        }
+        }  
 
-        li {
+        ul li {
             &.set-right {
                 float: right;
-            }
+            }     
         }
 
         .row-padding {

@@ -9,8 +9,24 @@ svg {
 line {
     stroke: $blue-electric;
     stroke-width: 3;
+    stroke-dasharray: 3000;
+    stroke-dashoffset: 3000;
+    
 
 }
+
+.draw-line {
+    animation: dash 8s linear forwards;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 3000;
+      }
+      to {
+        stroke-dashoffset: 0;
+      }
+  }
 
 .align-point {
     text-align: right;
