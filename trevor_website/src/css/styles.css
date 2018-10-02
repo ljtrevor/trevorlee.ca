@@ -6787,10 +6787,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Roboto", sans-serif;
   margin-left: 1.5rem; }
 
-.navbar-dark .navbar-brand {
-  color: #fff; }
-  .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #fff; }
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.65); }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
@@ -6805,7 +6801,7 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: underline; }
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.65);
-  border-color: rgba(255, 255, 255, 0.1); }
+  border-color: rgba(255, 255, 255, 0.65); }
 .navbar-dark .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.65)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 .navbar-dark .navbar-text {
@@ -6863,7 +6859,7 @@ h6 {
   white-space: nowrap; }
 
 p {
-  font-family: "Tinos", serif;
+  font-family: "Mukta Malar", sans-serif;
   color: #fff;
   font-size: 1.21rem; }
 
@@ -6871,15 +6867,8 @@ p {
   padding-bottom: 3em; }
 
 .my-container {
-  border: 3px solid green;
   position: relative;
   z-index: 3; }
-
-.my-row {
-  border: 3px solid red; }
-
-.my-col {
-  border: 3px solid blue; }
 
 .btn {
   border-radius: 75px; }
@@ -6904,10 +6893,9 @@ p {
   white-space: normal;
   margin-bottom: 10px; }
 
-.text-reduced {
-  font-size: 0.7em; }
-
-/* Grow Shadow */
+/* Grow Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects  
+ * Used in the 'about' buttons for the hover over effect
+*/
 .hvr-grow-shadow {
   display: inline-block;
   vertical-align: middle;
@@ -6943,9 +6931,9 @@ p {
   .about h3 {
     padding-top: 0em;
     padding-bottom: 0em; }
-    .about h3.padding {
-      padding-top: 1rem;
-      padding-bottom: 0.2rem; }
+  .about .padding {
+    padding-top: 1rem;
+    padding-bottom: 0.2rem; }
   .about img.profile-pic {
     border-radius: 50%;
     width: 100%; }
@@ -6959,8 +6947,12 @@ p {
     padding: 0;
     text-align: center; }
   @media (min-width: 768px) {
+    .about .add-margin {
+      margin-left: 10%; }
     .about p {
-      text-align: left; }
+      text-align: left;
+      padding-top: 0;
+      padding-bottom: 0; }
     .about h3.padding {
       text-align: left; } }
 
@@ -6991,12 +6983,8 @@ p {
     float: left;
     padding-right: 5px;
     padding-left: 5px; }
-  .experience br {
-    line-height: 0em; }
   .experience .fix-margin {
     margin-right: 10%; }
-  .experience ul {
-    list-style: none; }
   @media (min-width: 768px) {
     .experience .fix-margin-left {
       margin-left: 10%;
@@ -7014,7 +7002,9 @@ p {
   background-size: cover;
   height: auto;
   text-align: center;
-  /* Float Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects  */ }
+  /* Float Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects 
+   * Used for the contact icons
+  */ }
   .contact h2 {
     font-size: 2em; }
   .contact ul.list-social li {

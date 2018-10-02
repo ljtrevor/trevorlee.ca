@@ -3,7 +3,6 @@
     background-size: cover;
     height: auto;
   
-
     h3 {
         font-size: 1.45em;
         margin-bottom: 20px;
@@ -16,7 +15,6 @@
     h5 {
         font-size: 1.2em;
         margin-bottom: 10px;
-        
     }
 
     h6 {
@@ -42,16 +40,8 @@
         padding-left: 5px;
     }
 
-    br {
-        line-height: 0em;
-    }
-
     .fix-margin {
         margin-right: 10%;
-    }
-
-    ul {
-        list-style: none; 
     }
 
     @include media-breakpoint-up(md) {

@@ -9,14 +9,6 @@
 
 // White links against a dark background
 .navbar-dark {
-    .navbar-brand {
-      color: $navbar-dark-active-color;
-  
-      @include hover-focus {
-        color: $navbar-dark-active-color;
-      }
-    }
-  
     .navbar-nav {
       .nav-link {
         color: $navbar-dark-color;
@@ -41,7 +33,7 @@
   
     .navbar-toggler {
       color: $navbar-dark-color;
-      border-color: $navbar-dark-toggler-border-color;
+      border-color:  $navbar-dark-color;
     }
   
     .navbar-toggler-icon {

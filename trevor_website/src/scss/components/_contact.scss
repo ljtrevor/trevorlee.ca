@@ -4,7 +4,6 @@
     height: auto;
     text-align: center;
  
-
     h2 {
         font-size: 2em;
     }
@@ -42,7 +41,9 @@
     }
 
 
-    /* Float Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects  */
+    /* Float Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects 
+     * Used for the contact icons
+    */
     .hvr-float-shadow {
         display: inline-block;
         vertical-align: middle;

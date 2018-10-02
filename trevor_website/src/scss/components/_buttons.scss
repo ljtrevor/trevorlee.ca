@@ -26,11 +26,10 @@
 }
 
 
-.text-reduced {
-    font-size: 0.7em;
-}
 
-/* Grow Shadow */
+/* Grow Shadow: From hover.css - http://ianlunn.github.io/Hover/#effects  
+ * Used in the 'about' buttons for the hover over effect
+*/
 .hvr-grow-shadow {
     display: inline-block;
     vertical-align: middle;
@@ -47,3 +46,5 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
+
+  
