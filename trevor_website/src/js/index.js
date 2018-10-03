@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(window).on( "load", function() {
 
 /* 
  *Paddings used to space SVG elements and make them look cleaner
@@ -6,6 +6,9 @@ $( document ).ready(function() {
 var padding_left=7;
 var padding_top=5;
 var padding_point=30;
+var line1;   
+var div1;   
+var div2;
 
 /*
  *Get the position of an element relative to the document
@@ -48,56 +51,11 @@ $.fn.isInViewport = function() {
 
  
 // Get the SVG line, the start point, and end point of the line.
-line1 = $('#line1');   
-div1 = $('#point_start');   
-div2 = $('#point_end');
-
-//Get the document position of the start point and end point for the line.
-var pos1 = div1.offset();
-var pos2 = div2.offset();
-
-// Set the SVG canvas height dynamically (the width is set to 100% in css)
-var svg = $('#svg1');
-svg.css('height', pos2.top + padding_point);
-
-//if the start point is in the viewport, draw the svg line
-if($('#point_start').isInViewport()) {
-    $('#line1').addClass('draw-line');
-    line1
-        .attr('x1', pos1.left + padding_left)
-        .attr('y1', pos1.top + padding_top)
-        .attr('x2', pos2.left + padding_left)
-        .attr('y2', pos2.top + padding_top);
+function getLinePosition() {
+    line1 = $('#line1');   
+    div1 = $('#point_start');   
+    div2 = $('#point_end');
 }
-
-$(window).scroll(function() {
-    if($('#point_start').isInViewport()) {
-        $('#line1').addClass('draw-line');
-        line1
-            .attr('x1', pos1.left + padding_left)
-            .attr('y1', pos1.top + padding_top)
-            .attr('x2', pos2.left + padding_left)
-            .attr('y2', pos2.top + padding_top);
-    }
-})
-
-// When the user is in the experience section, draw the svg line
-var experienceOffset = $('#Experience').offset().top;
-    if($(window).scrollTop() + $(window).height() >= experienceOffset) {
-        $('#line1').addClass('draw-line');
-        line1
-            .attr('x1', pos1.left + padding_left)
-            .attr('y1', pos1.top + padding_top)
-            .attr('x2', pos2.left + padding_left)
-            .attr('y2', pos2.top + padding_top);
-    }
-
-// Event listener to resize the svg canvas and redraw the line when the window is resized.
-  window.addEventListener('resize', resizeCanvas, false);
-  window.addEventListener('orientationchange', resizeCanvas, false);
-  resizeCanvas();
-
-
   // Navbar smooth scroll effect
   var scrollLink = $('.scroll');
   scrollLink.click(function(e){
@@ -134,4 +92,62 @@ var experienceOffset = $('#Experience').offset().top;
 
   //Scroll Reveal
   ScrollReveal().reveal('.scrollReveal',{delay:300, duration:800, easing:'ease-in', interval: 500});
+
+  getLinePosition();
+
+//Get the document position of the start point and end point for the line.
+var pos1 = div1.offset();
+var pos2 = div2.offset();
+
+// Set the SVG canvas height dynamically (the width is set to 100% in css)
+var svg = $('#svg1');
+svg.css('height', pos2.top + padding_point);
+
+//if the start point is in the viewport, draw the svg line
+if($('#point_start').isInViewport()) {
+    $('#line1').addClass('draw-line');
+    line1
+        .attr('x1', pos1.left + padding_left)
+        .attr('y1', pos1.top + padding_top)
+        .attr('x2', pos2.left + padding_left)
+        .attr('y2', pos2.top + padding_top);
+}
+
+//if the end point is in the viewport, draw the svg line
+if($('#point_end').isInViewport()) {
+    $('#line1').addClass('draw-line');
+    line1
+        .attr('x1', pos1.left + padding_left)
+        .attr('y1', pos1.top + padding_top)
+        .attr('x2', pos2.left + padding_left)
+        .attr('y2', pos2.top + padding_top);
+}
+
+$(window).scroll(function() {
+    if($('#point_start').isInViewport()) {
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
+})
+
+// When the user is in the experience section, draw the svg line
+var experienceOffset = $('#Experience').offset().top;
+    if($(window).scrollTop() + $(window).height() >= experienceOffset) {
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
+
+// Event listener to resize the svg canvas and redraw the line when the window is resized.
+  window.addEventListener('resize', resizeCanvas, false);
+  window.addEventListener('orientationchange', resizeCanvas, false);
+  resizeCanvas();
+
 });
