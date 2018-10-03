@@ -45,6 +45,7 @@ $.fn.isInViewport = function() {
   
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
+
  
 // Get the SVG line, the start point, and end point of the line.
 line1 = $('#line1');   
