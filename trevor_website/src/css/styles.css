@@ -4430,7 +4430,7 @@ p {
   transform: scale(1.1); }
 
 .hero {
-  background-image: url(../images/hero_img.png);
+  background-image: url(../images/hero_img.jpg);
   background-size: cover;
   height: auto;
   padding-top: 50vh;
@@ -4474,7 +4474,7 @@ p {
       text-align: left; } }
 
 .experience {
-  background-image: url(../images/mountain_background.png);
+  background-image: url(../images/mountain_background.jpg);
   background-size: cover;
   height: auto; }
   .experience h3 {
