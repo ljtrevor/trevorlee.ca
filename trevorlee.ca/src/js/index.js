@@ -100,49 +100,20 @@ function getLinePosition() {
       })
   })
 
-// Get the position of the SVG Line and points  
-getLinePosition();
+  // check the browser and if it is not IE, then do the SVG line animation
+if(!(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))) {
+    // Get the position of the SVG Line and points  
+    getLinePosition();
 
-//Get the document position of the start point and end point for the line.
-var pos1 = div1.offset();
-var pos2 = div2.offset();
+    //Get the document position of the start point and end point for the line.
+    var pos1 = div1.offset();
+    var pos2 = div2.offset();
 
-// Set the SVG canvas height dynamically (the width is set to 100% in css)
-var svg = $('#svg1');
-svg.css('height', pos2.top + padding_point);
+    // Set the SVG canvas height dynamically (the width is set to 100% in css)
+    var svg = $('#svg1');
+    svg.css('height', pos2.top + padding_point);
 
-//if the start point is in the viewport, draw the svg line
-if($('#point_start').isInViewport()) {
-    $('#line1').addClass('draw-line');
-    line1
-        .attr('x1', pos1.left + padding_left)
-        .attr('y1', pos1.top + padding_top)
-        .attr('x2', pos2.left + padding_left)
-        .attr('y2', pos2.top + padding_top);
-}
-
-//if the mid point is in the viewport, draw the svg line
-if($('#point_middle').isInViewport()) {
-    $('#line1').addClass('draw-line');
-    line1
-        .attr('x1', pos1.left + padding_left)
-        .attr('y1', pos1.top + padding_top)
-        .attr('x2', pos2.left + padding_left)
-        .attr('y2', pos2.top + padding_top);
-}
-
-//if the end point is in the viewport, draw the svg line
-if($('#point_end').isInViewport()) {
-    $('#line1').addClass('draw-line');
-    line1
-        .attr('x1', pos1.left + padding_left)
-        .attr('y1', pos1.top + padding_top)
-        .attr('x2', pos2.left + padding_left)
-        .attr('y2', pos2.top + padding_top);
-}
-
-
-$(window).scroll(function() {
+    //if the start point is in the viewport, draw the svg line
     if($('#point_start').isInViewport()) {
         $('#line1').addClass('draw-line');
         line1
@@ -151,24 +122,76 @@ $(window).scroll(function() {
             .attr('x2', pos2.left + padding_left)
             .attr('y2', pos2.top + padding_top);
     }
-    else if($('#point_middle').isInViewport()) {
-        $('#line1').addClass('draw-line');
-        line1
-            .attr('x1', pos1.left + padding_left)
-            .attr('y1', pos1.top + padding_top)
-            .attr('x2', pos2.left + padding_left)
-            .attr('y2', pos2.top + padding_top);
-    }
-    else if($('#point_end').isInViewport()) {
-        $('#line1').addClass('draw-line');
-        line1
-            .attr('x1', pos1.left + padding_left)
-            .attr('y1', pos1.top + padding_top)
-            .attr('x2', pos2.left + padding_left)
-            .attr('y2', pos2.top + padding_top);
-    }
-})
 
+    //if the mid point is in the viewport, draw the svg line
+    if($('#point_middle').isInViewport()) {
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
+
+    //if the end point is in the viewport, draw the svg line
+    if($('#point_end').isInViewport()) {
+        $('#line1').addClass('draw-line');
+        line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+    }
+
+
+    $(window).scroll(function() {
+        if($('#point_start').isInViewport()) {
+            $('#line1').addClass('draw-line');
+            line1
+                .attr('x1', pos1.left + padding_left)
+                .attr('y1', pos1.top + padding_top)
+                .attr('x2', pos2.left + padding_left)
+                .attr('y2', pos2.top + padding_top);
+        }
+        else if($('#point_middle').isInViewport()) {
+            $('#line1').addClass('draw-line');
+            line1
+                .attr('x1', pos1.left + padding_left)
+                .attr('y1', pos1.top + padding_top)
+                .attr('x2', pos2.left + padding_left)
+                .attr('y2', pos2.top + padding_top);
+        }
+        else if($('#point_end').isInViewport()) {
+            $('#line1').addClass('draw-line');
+            line1
+                .attr('x1', pos1.left + padding_left)
+                .attr('y1', pos1.top + padding_top)
+                .attr('x2', pos2.left + padding_left)
+                .attr('y2', pos2.top + padding_top);
+        }
+    })
+}
+// if the browser is IE, then do not do the line animation (since IE does not support SVG CSS animations)
+else {
+    $("line").css("stroke-dasharray","none");
+    $("line").css("stroke-dashoffset","none");
+    
+    getLinePosition();
+
+    //Get the document position of the start point and end point for the line.
+    var pos1 = div1.offset();
+    var pos2 = div2.offset();
+
+    // Set the SVG canvas height dynamically (the width is set to 100% in css)
+    var svg = $('#svg1');
+    svg.css('height', pos2.top + padding_point);
+
+    line1
+            .attr('x1', pos1.left + padding_left)
+            .attr('y1', pos1.top + padding_top)
+            .attr('x2', pos2.left + padding_left)
+            .attr('y2', pos2.top + padding_top);
+}
 
 //Event listener to resize the svg canvas and redraw the line when the window is resized.
   window.addEventListener('resize', resizeCanvas, false);
