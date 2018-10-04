@@ -8,7 +8,7 @@ var padding_top=5;
 var padding_point=30;
 
 /* 
- * Usesd to draw SVG line
+ *variables usesd to draw SVG line
 */
 var line1;   
 var div1;   
@@ -170,12 +170,11 @@ $(window).scroll(function() {
 })
 
 
-// Event listener to resize the svg canvas and redraw the line when the window is resized.
+//Event listener to resize the svg canvas and redraw the line when the window is resized.
   window.addEventListener('resize', resizeCanvas, false);
   window.addEventListener('orientationchange', resizeCanvas, false);
   resizeCanvas();
 
-  //Scroll Reveal
+//Scroll Reveal
   ScrollReveal().reveal('.scrollReveal',{delay:300, duration:800, easing:'ease-in', interval: 500});
-
 });
