@@ -14,4 +14,9 @@
         text-align: left;
       }
 
+      
+    @include media-breakpoint-up(xl) {
+        padding-bottom: 6em;
+      }
+
 }

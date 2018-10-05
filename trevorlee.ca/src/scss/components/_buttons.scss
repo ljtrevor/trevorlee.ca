@@ -10,6 +10,10 @@
     width: 100px;
     height: 40px;
     margin-bottom: 5px;
+
+    &.text-reduced {
+        font-size: 0.90em;
+    }
 }
 
 .btn-experience{

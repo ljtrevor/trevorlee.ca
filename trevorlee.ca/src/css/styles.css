@@ -4398,6 +4398,8 @@ p {
   width: 100px;
   height: 40px;
   margin-bottom: 5px; }
+  .btn-about.text-reduced {
+    font-size: 0.90em; }
 
 .btn-experience {
   background-color: #dcdcdc;
@@ -4440,6 +4442,9 @@ p {
   @media (min-width: 768px) {
     .hero {
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .hero {
+      padding-bottom: 6em; } }
 
 .about {
   background-color: #6a7d84;
