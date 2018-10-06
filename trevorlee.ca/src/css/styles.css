@@ -4432,7 +4432,7 @@ p {
   transform: scale(1.1); }
 
 .hero {
-  background-image: url(../images/hero_img.jpg);
+  background-image: url(images/hero_img.jpg);
   background-size: cover;
   height: auto;
   padding-top: 50vh;
@@ -4479,7 +4479,7 @@ p {
       text-align: left; } }
 
 .experience {
-  background-image: url(../images/mountain_background.jpg);
+  background-image: url(images/mountain_background.jpg);
   background-size: cover;
   height: auto; }
   .experience h3 {
@@ -4529,12 +4529,14 @@ p {
   */ }
   .contact h2 {
     font-size: 2em;
-    padding-bottom: 35px; }
+    padding-bottom: 35px;
+    padding-left: 0; }
   .contact h3 {
     padding-bottom: 2vh;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: rgba(204, 204, 204, 0.85); }
   .contact ul.list-social {
-    padding-right: 3.75%; }
+    padding-right: 3.2%; }
     .contact ul.list-social li {
       display: inline-block;
       padding-right: 5px;

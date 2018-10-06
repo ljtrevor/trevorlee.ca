@@ -7,16 +7,18 @@
     h2 {
         font-size: 2em;
         padding-bottom: 35px;
+        padding-left: 0;
     }
     
     h3 {
         padding-bottom: 2vh;
         font-size: 1.5em;
+        color: darken($navbar-dark-hover-color, 20);
         
     }
 
     ul.list-social {
-        padding-right: 3.75%; 
+        padding-right: 3.2%; 
         li {
             display: inline-block;
             padding-right: 5px;
