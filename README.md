@@ -1,4 +1,4 @@
-# trevorlee.ca
+# [trevorlee.ca](https://trevorlee.ca)
 
 My personal website displaying skills and experience. 
 
