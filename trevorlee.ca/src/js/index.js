@@ -55,7 +55,6 @@ $.fn.isInViewport = function() {
     return elementBottom > viewportTop && elementTop < viewportBottom;
   };
 
- 
 // Get the SVG line, the start point, and end point of the line.
 function getLinePosition() {
     line1 = $('#line1');   
@@ -65,7 +64,6 @@ function getLinePosition() {
 
 /********************* End of Functions*********************************************************** */
 
-
   // Navbar smooth scroll effect
   var scrollLink = $('.scroll');
   scrollLink.click(function(e){
@@ -74,7 +72,6 @@ function getLinePosition() {
         scrollTop: $(this.hash).offset().top
       }, 1000);
   })
-
 
   //if on top of the page, home should be selected
   if($(window).scrollTop() === 0) {
@@ -142,7 +139,6 @@ if(!(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))) {
             .attr('x2', pos2.left + padding_left)
             .attr('y2', pos2.top + padding_top);
     }
-
 
     $(window).scroll(function() {
         if($('#point_start').isInViewport()) {
